@@ -9,4 +9,8 @@ public class ShoppingCart {
     public List<Product> getCart() {
         return cart;
     }
+
+    public void addProduct(Product product) {
+        cart.add(product);
+    }
 }
