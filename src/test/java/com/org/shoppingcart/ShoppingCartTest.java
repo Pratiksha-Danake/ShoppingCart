@@ -47,11 +47,6 @@ public class ShoppingCartTest {
         int sizeAfterPurchase = shoppingCart.getCart().size();
 
         // assert
-        assertEquals(sizeBeforePurchase, sizeAfterPurchase+1);
-    }
-
-    @Test
-    void shouldThrowProductNotFoundInCartExceptionIfTriesToPurchaseProductWhichIsNotInCart() {
-
+        assertEquals(sizeBeforePurchase, sizeAfterPurchase + 1);
     }
 }
