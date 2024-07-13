@@ -1,6 +1,7 @@
 package com.org.shoppingcart;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ShoppingCart {
@@ -15,10 +16,13 @@ public class ShoppingCart {
     }
 
     public void purchase(String productToPurchase) {
-        for (Product product : cart){
+        Iterator<Product> iterator = cart.iterator();
+        while (iterator.hasNext()) {
+            Product product = iterator.next();
             if (product.getName().equalsIgnoreCase(productToPurchase)) {
-                cart.remove(product);
+                iterator.remove();
                 System.out.println("Product Purchased Successfully..!");
+                break;
             }
         }
     }

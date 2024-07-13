@@ -38,11 +38,20 @@ public class ShoppingCartTest {
     void shouldBeAbleToPurchaseProductAddedInShoppingCart() throws InvalidProductDataException {
         // arrange
         String productNameToPurchase = "Laptop";
+        Product product = Product.create("Laptop", 100000);
 
         // act
+        shoppingCart.addProduct(product);
+        int sizeBeforePurchase = shoppingCart.getCart().size();
         shoppingCart.purchase(productNameToPurchase);
+        int sizeAfterPurchase = shoppingCart.getCart().size();
 
         // assert
-        assertEquals(0, shoppingCart.getCart().size());
+        assertEquals(sizeBeforePurchase, sizeAfterPurchase+1);
+    }
+
+    @Test
+    void shouldThrowProductNotFoundInCartExceptionIfTriesToPurchaseProductWhichIsNotInCart() {
+
     }
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.org.shoppingcart.ShoppingCartTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-13T14:06:19" hostname="DESKTOP-GUO1275" time="0.054">
+<testsuite name="com.org.shoppingcart.ShoppingCartTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-07-13T14:31:16" hostname="DESKTOP-GUO1275" time="0.058">
   <properties/>
-  <testcase name="shouldBeAbleToPurchaseProductAddedInShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.04"/>
-  <testcase name="shouldBeAbleToAddProductToShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.004"/>
-  <testcase name="shouldBeAbleToCreateEmptyShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="shouldBeAbleToPurchaseProductAddedInShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.044"/>
+  <testcase name="shouldBeAbleToAddProductToShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.002"/>
+  <testcase name="shouldThrowProductNotFoundInCartExceptionIfTriesToPurchaseProductWhichIsNotInCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.002"/>
+  <testcase name="shouldBeAbleToCreateEmptyShoppingCart()" classname="com.org.shoppingcart.ShoppingCartTest" time="0.004"/>
+  <system-out><![CDATA[Product Purchased Successfully..!
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

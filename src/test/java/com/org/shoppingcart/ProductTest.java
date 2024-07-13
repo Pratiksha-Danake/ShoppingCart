@@ -47,5 +47,4 @@ public class ProductTest {
             Product.create(productName, price);
         });
     }
-
 }
