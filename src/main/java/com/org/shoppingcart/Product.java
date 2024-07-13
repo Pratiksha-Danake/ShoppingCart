@@ -7,8 +7,8 @@ import com.org.shoppingcart.exception.InvalidProductPriceException;
 import java.util.Objects;
 
 public class Product {
-    private String name;
-    private double price;
+    private final String name;
+    private final double price;
 
     private Product(String name, double price) {
         this.name = name;
@@ -17,10 +17,14 @@ public class Product {
 
     public static Product create(String name, double price) throws InvalidProductDataException {
         if (name == null || name.equals(" "))
-            throw new InvalidProductNameException("Product name can't be null or empty:"+ name);
+            throw new InvalidProductNameException("Product name can't be null or empty:" + name);
         else if (price < 0)
-            throw new InvalidProductPriceException("Product price can't be less than zero:"+price);
+            throw new InvalidProductPriceException("Product price can't be less than zero:" + price);
         return new Product(name, price);
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
