@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.org.shoppingcart.ProductTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-13T13:44:49" hostname="DESKTOP-GUO1275" time="0.078">
-  <properties/>
-  <testcase name="shouldThrowInvalidProductNameExceptionIfProductNameIsInvalid()" classname="com.org.shoppingcart.ProductTest" time="0.042"/>
-  <testcase name="shouldThrowInvalidProductPriceExceptionIfProductPriceIsLessThanZero()" classname="com.org.shoppingcart.ProductTest" time="0.015"/>
-  <testcase name="shouldCreateProductWithNameAndPrice()" classname="com.org.shoppingcart.ProductTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
